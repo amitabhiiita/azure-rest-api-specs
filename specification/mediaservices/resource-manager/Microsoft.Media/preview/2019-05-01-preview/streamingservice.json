@@ -1756,7 +1756,6 @@
         "error": {
           "$ref": "#/definitions/ODataError",
           "description": "The error properties.",
-          "title": "ApiError"
         }
       },
       "type": "object",
