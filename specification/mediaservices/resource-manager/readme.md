@@ -36,7 +36,11 @@ These settings apply only when `--tag=package-2019-05-preview` is specified on t
 
 ``` yaml $(tag) == 'package-2019-05-preview'
 input-file:
-  - Microsoft.Media/preview/2019-05-01-preview/StreamProcessor.json
+  - Microsoft.Media/preview/2019-05-01-preview/Common.json
+  - Microsoft.Media/preview/2019-05-01-preview/ContentKeyPolicies.json
+  - Microsoft.Media/preview/2019-05-01-preview/Encoding.json
+  - Microsoft.Media/preview/2019-05-01-preview/StreamingPoliciesAndStreamingLocators.json
+  - Microsoft.Media/preview/2019-05-01-preview/streamingservice.json
 ```
 
 ### Tag: package-2018-07
