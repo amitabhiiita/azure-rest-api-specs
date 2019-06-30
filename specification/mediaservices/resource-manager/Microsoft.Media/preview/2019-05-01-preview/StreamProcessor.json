@@ -83,6 +83,13 @@
           },
           "description": "Stream Processor Sources"
         },
+        "transforms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Transform"
+          },
+          "description": "Stream Processor Transforms"
+        },
         "sinks": {
           "type": "array",
           "items": {
@@ -138,6 +145,27 @@
         "enabled"
       ],
       "description": "Source"
+    },
+    "Transform": {
+      "x-ms-discriminator-value": "#Microsoft.Media.Transform",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether the transform is enabled"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Transform inputs"
+        }
+      },
+      "type": "object",
+      "required": [
+        "enabled"
+      ],
+      "description": "Transform"
     },
     "Sink": {
       "x-ms-discriminator-value": "#Microsoft.Media.Sink",
