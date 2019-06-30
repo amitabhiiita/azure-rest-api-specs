@@ -83,6 +83,13 @@
           },
           "description": "Stream Processor Sources"
         },
+        "transforms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Transform"
+          },
+          "description": "Stream Processor Transforms"
+        },
         "sinks": {
           "type": "array",
           "items": {
