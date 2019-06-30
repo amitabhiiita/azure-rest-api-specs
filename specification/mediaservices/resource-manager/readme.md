@@ -39,7 +39,6 @@ input-file:
   - Microsoft.Media/preview/2019-05-01-preview/AccountFilters.json
   - Microsoft.Media/preview/2019-05-01-preview/Accounts.json
   - Microsoft.Media/preview/2019-05-01-preview/AssetsAndAssetFilters.json
-  - Microsoft.Media/preview/2019-05-01-preview/Common.json
   - Microsoft.Media/preview/2019-05-01-preview/StreamProcessor.json
 ```
 
