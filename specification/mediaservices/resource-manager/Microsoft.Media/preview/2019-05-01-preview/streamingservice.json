@@ -1755,7 +1755,7 @@
       "properties": {
         "error": {
           "$ref": "#/definitions/ODataError",
-          "description": "The error properties."
+          "description": "The error properties.",
         }
       },
       "type": "object",
