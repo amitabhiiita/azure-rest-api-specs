@@ -83,13 +83,6 @@
           },
           "description": "Stream Processor Sources"
         },
-        "transforms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/TransformDef"
-          },
-          "description": "Stream Processor Transforms"
-        },
         "sinks": {
           "type": "array",
           "items": {
@@ -112,10 +105,6 @@
           "type": "string",
           "description": "Module name"
         },
-        "type": {
-          "type": "string",
-          "description": "Module type"
-        },
         "properties": {
           "$ref": "#/definitions/ModuleProperties",
           "description": "Module properties"
@@ -134,43 +123,9 @@
           "$ref": "#/definitions/ModuleBase"
         }
       ],
-      "properties": {
-        "enabled": {
-          "type": "boolean",
-          "description": "Whether the source is enabled"
-        }
-      },
+      "properties": {},
       "type": "object",
-      "required": [
-        "enabled"
-      ],
       "description": "Source"
-    },
-    "TransformDef": {
-      "x-ms-discriminator-value": "#Microsoft.Media.Transform",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ModuleBase"
-        }
-      ],
-      "properties": {
-        "enabled": {
-          "type": "boolean",
-          "description": "Whether the transform is enabled"
-        },
-        "inputs": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "Transform inputs"
-        }
-      },
-      "type": "object",
-      "required": [
-        "enabled"
-      ],
-      "description": "Transform"
     },
     "Sink": {
       "x-ms-discriminator-value": "#Microsoft.Media.Sink",
@@ -180,10 +135,6 @@
         }
       ],
       "properties": {
-        "enabled": {
-          "type": "boolean",
-          "description": "Whether the sink is enabled"
-        },
         "inputs": {
           "type": "array",
           "items": {
@@ -193,9 +144,6 @@
         }
       },
       "type": "object",
-      "required": [
-        "enabled"
-      ],
       "description": "Sink"
     },
     "ModuleProperties": {
@@ -256,11 +204,11 @@
       "properties": {
         "assetName": {
           "type": "string",
-          "description": "Sink Name"
+          "description": "Asset Name"
         }
       },
       "type": "object",
-      "description": "Archive sink properties"
+      "description": "Archiver sink properties"
     },
     "StreamProcessor": {
       "allOf": [
@@ -643,7 +591,8 @@
           {
             "$ref": "#/parameters/ApiVersion"
           }
-        ]
+        ],
+        "x-ms-long-running-operation": true
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/streamprocessors/{streamProcessorName}/stop": {
@@ -682,7 +631,8 @@
           {
             "$ref": "#/parameters/ApiVersion"
           }
-        ]
+        ],
+        "x-ms-long-running-operation": true
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/streamprocessors/{streamProcessorName}/asyncoperationresults": {
