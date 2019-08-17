@@ -1,4 +1,5 @@
 {
+  "swagger": "2.0",
   "parameters": {
     "subscriptionId": "0a6ec948-5a62-437d-b9df-934dc7c1b722",
     "resourceGroupName": "mediaresources",
