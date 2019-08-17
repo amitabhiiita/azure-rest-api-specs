@@ -44,7 +44,7 @@ input-file:
   - Microsoft.Media/preview/2019-05-01-preview/Encoding.json
   - Microsoft.Media/preview/2019-05-01-preview/StreamingPoliciesAndStreamingLocators.json
   - Microsoft.Media/preview/2019-05-01-preview/streamingservice.json
-  - Microsoft.Media/preview/2019-05-01-preview/StreamProcessor.json
+  - Microsoft.Media/preview/2019-05-01-preview/MediaGraph.json
 ```
 
 ### Tag: package-2018-07
