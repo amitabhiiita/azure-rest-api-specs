@@ -45,14 +45,14 @@ input-file:
   - Microsoft.Media/preview/2019-05-01-preview/StreamingPoliciesAndStreamingLocators.json
   - Microsoft.Media/preview/2019-05-01-preview/streamingservice.json
   - Microsoft.Media/preview/2019-05-01-preview/MediaGraph.json
-  - Microsoft.Media/preview/2019-05-01-preview/media-graph-create.json
-  - Microsoft.Media/preview/2019-05-01-preview/media-graph-delete.json
-  - Microsoft.Media/preview/2019-05-01-preview/media-graph-get-by-name.json
-  - Microsoft.Media/preview/2019-05-01-preview/media-graph-start.json
-  - Microsoft.Media/preview/2019-05-01-preview/media-graph-stop.json
-  - Microsoft.Media/preview/2019-05-01-preview/mediagraph-list-all.json
-  - Microsoft.Media/preview/2019-05-01-preview/operation-result-get.json
-  - Microsoft.Media/preview/2019-05-01-preview/operation-status-get.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/media-graph-create.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/media-graph-delete.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/media-graph-get-by-name.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/media-graph-start.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/media-graph-stop.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/mediagraph-list-all.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/operation-result-get.json
+  - Microsoft.Media/preview/2019-05-01-preview/examples/operation-status-get.json
 ```
 
 ### Tag: package-2018-07
