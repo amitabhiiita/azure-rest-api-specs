@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "resourceGroupName": "contoso",
+    "accountName": "contosomedia",
+    "mediaGraphName": "SampleMediaGraph",
+    "api-version": "2018-12-05-privatepreview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "SampleMediaGraph",
+        "properties": {
+          "description": "",
+          "state": "Stopped",
+          "sources": [],
+          "sinks": []
+        }
+      }
+    }
+  }
+}
