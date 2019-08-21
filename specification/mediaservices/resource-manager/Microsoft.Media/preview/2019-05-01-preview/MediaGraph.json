@@ -319,11 +319,11 @@
     }
   },
   "paths": {
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs": {
       "get": {
         "summary": "List media graphs",
-        "description": "Lists media graph in the Media Services account",
-        "operationId": "MediaGraph_List",
+        "description": "Lists media graphs in the Media Services account",
+        "operationId": "MediaGraphs_List",
         "responses": {
           "200": {
             "description": "OK",
@@ -353,17 +353,17 @@
           }
         ],
         "x-ms-examples": {
-          "List all media graph": {
+          "List all media graphs": {
             "$ref": "examples/media-graph-list-all.json"
           }
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph/{mediaGraphName}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs/{mediaGraphName}": {
       "get": {
         "summary": "Get a media graph",
         "description": "Get the details of a media graph in the Media Services account",
-        "operationId": "MediaGraph_Get",
+        "operationId": "MediaGraphs_Get",
         "responses": {
           "200": {
             "description": "OK",
@@ -411,7 +411,7 @@
       "put": {
         "summary": "Create or update a media graph",
         "description": "Create or update a media graph in the Media Services account",
-        "operationId": "MediaGraph_CreateOrUpdate",
+        "operationId": "MediaGraphs_CreateOrUpdate",
         "responses": {
           "200": {
             "description": "OK",
@@ -471,7 +471,7 @@
       "delete": {
         "summary": "Delete a media graph",
         "description": "Deletes a media graph in the Media Services account",
-        "operationId": "MediaGraph_Delete",
+        "operationId": "MediaGraphs_Delete",
         "responses": {
           "200": {
             "description": "OK"
@@ -514,11 +514,11 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph/{mediaGraphName}/start": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs/{mediaGraphName}/start": {
       "post": {
         "summary": "Start a media graph",
         "description": "Start a media graph in the Media Services account",
-        "operationId": "MediaGraph_Start",
+        "operationId": "MediaGraphs_Start",
         "responses": {
           "200": {
             "description": "OK"
@@ -561,11 +561,11 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph/{mediaGraphName}/stop": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs/{mediaGraphName}/stop": {
       "post": {
         "summary": "Stop a media graph",
         "description": "Stop a media graph in the Media Services account",
-        "operationId": "MediaGraph_Stop",
+        "operationId": "MediaGraphs_Stop",
         "responses": {
           "200": {
             "description": "OK"
@@ -608,7 +608,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph/{mediaGraphName}/operationsStatus/{operationId}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs/{mediaGraphName}/operationsStatus/{operationId}": {
       "get": {
         "summary": "Get the operation status",
         "description": "Get the operation status of a media graph in the media services account",
@@ -662,7 +662,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraph/{mediaGraphName}/operationResults/{operationId}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Media/mediaServices/{accountName}/mediaGraphs/{mediaGraphName}/operationResults/{operationId}": {
       "get": {
         "summary": "Get the operation result",
         "description": "Get the operation result of a media graph in the Media Services account",
